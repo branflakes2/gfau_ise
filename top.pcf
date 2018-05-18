@@ -1,0 +1,140 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu May 17 07:47:42 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "CLK" LOCATE = SITE "P56" LEVEL 1;
+COMP "ERR" LOCATE = SITE "P144" LEVEL 1;
+COMP "INT" LOCATE = SITE "P30" LEVEL 1;
+COMP "RDY" LOCATE = SITE "P2" LEVEL 1;
+COMP "nCE" LOCATE = SITE "P97" LEVEL 1;
+COMP "nOE" LOCATE = SITE "P92" LEVEL 1;
+COMP "nWE" LOCATE = SITE "P94" LEVEL 1;
+COMP "A<0>" LOCATE = SITE "P114" LEVEL 1;
+COMP "A<1>" LOCATE = SITE "P116" LEVEL 1;
+COMP "A<2>" LOCATE = SITE "P118" LEVEL 1;
+COMP "A<3>" LOCATE = SITE "P120" LEVEL 1;
+COMP "A<4>" LOCATE = SITE "P29" LEVEL 1;
+COMP "A<5>" LOCATE = SITE "P111" LEVEL 1;
+COMP "A<6>" LOCATE = SITE "P104" LEVEL 1;
+COMP "A<7>" LOCATE = SITE "P101" LEVEL 1;
+COMP "A<8>" LOCATE = SITE "P99" LEVEL 1;
+COMP "A<9>" LOCATE = SITE "P82" LEVEL 1;
+COMP "INTA" LOCATE = SITE "P10" LEVEL 1;
+COMP "GRST" LOCATE = SITE "P121" LEVEL 1;
+COMP "TCLK" LOCATE = SITE "P6" LEVEL 1;
+COMP "nBHE" LOCATE = SITE "P87" LEVEL 1;
+COMP "nBLE" LOCATE = SITE "P84" LEVEL 1;
+COMP "A<10>" LOCATE = SITE "P80" LEVEL 1;
+COMP "A<11>" LOCATE = SITE "P78" LEVEL 1;
+COMP "A<12>" LOCATE = SITE "P40" LEVEL 1;
+COMP "A<13>" LOCATE = SITE "P34" LEVEL 1;
+COMP "A<14>" LOCATE = SITE "P32" LEVEL 1;
+COMP "IO<0>" LOCATE = SITE "P137" LEVEL 1;
+COMP "IO<1>" LOCATE = SITE "P139" LEVEL 1;
+COMP "IO<2>" LOCATE = SITE "P141" LEVEL 1;
+COMP "IO<3>" LOCATE = SITE "P143" LEVEL 1;
+COMP "IO<4>" LOCATE = SITE "P1" LEVEL 1;
+COMP "IO<5>" LOCATE = SITE "P5" LEVEL 1;
+COMP "IO<6>" LOCATE = SITE "P7" LEVEL 1;
+COMP "IO<7>" LOCATE = SITE "P9" LEVEL 1;
+COMP "START" LOCATE = SITE "P8" LEVEL 1;
+COMP "wr_rd_o" LOCATE = SITE "P119" LEVEL 1;
+COMP "result_out<0>" LOCATE = SITE "P117" LEVEL 1;
+COMP "result_out<1>" LOCATE = SITE "P115" LEVEL 1;
+COMP "result_out<2>" LOCATE = SITE "P112" LEVEL 1;
+COMP "result_out<3>" LOCATE = SITE "P105" LEVEL 1;
+COMP "result_out<4>" LOCATE = SITE "P102" LEVEL 1;
+COMP "result_out<5>" LOCATE = SITE "P100" LEVEL 1;
+COMP "result_out<6>" LOCATE = SITE "P98" LEVEL 1;
+COMP "result_out<7>" LOCATE = SITE "P95" LEVEL 1;
+COMP "DATA<0>" LOCATE = SITE "P35" LEVEL 1;
+COMP "DATA<1>" LOCATE = SITE "P33" LEVEL 1;
+COMP "DATA<2>" LOCATE = SITE "P27" LEVEL 1;
+COMP "DATA<3>" LOCATE = SITE "P24" LEVEL 1;
+COMP "DATA<4>" LOCATE = SITE "P22" LEVEL 1;
+COMP "DATA<5>" LOCATE = SITE "P17" LEVEL 1;
+COMP "DATA<6>" LOCATE = SITE "P15" LEVEL 1;
+COMP "DATA<7>" LOCATE = SITE "P12" LEVEL 1;
+COMP "state_out<0>" LOCATE = SITE "P134" LEVEL 1;
+COMP "state_out<1>" LOCATE = SITE "P133" LEVEL 1;
+COMP "state_out<2>" LOCATE = SITE "P132" LEVEL 1;
+COMP "state_out<3>" LOCATE = SITE "P131" LEVEL 1;
+COMP "state_out<4>" LOCATE = SITE "P127" LEVEL 1;
+COMP "state_out<5>" LOCATE = SITE "P126" LEVEL 1;
+COMP "state_out<6>" LOCATE = SITE "P124" LEVEL 1;
+COMP "state_out<7>" LOCATE = SITE "P123" LEVEL 1;
+TIMEGRP CLK = BEL "io_unit/t_clk_buf" BEL "io_unit/tclk_prev" BEL
+        "mem/mem_rdy" BEL "mem/dout_cu_7" BEL "mem/dout_cu_6" BEL
+        "mem/dout_cu_5" BEL "mem/dout_cu_4" BEL "mem/dout_cu_3" BEL
+        "mem/dout_cu_2" BEL "mem/dout_cu_1" BEL "mem/dout_cu_0" BEL "mem/A_8"
+        BEL "mem/A_7" BEL "mem/A_6" BEL "mem/A_5" BEL "mem/A_4" BEL "mem/A_3"
+        BEL "mem/A_2" BEL "mem/A_1" BEL "mem/A_0" BEL "mem/nWE" BEL
+        "mem/setup" BEL "mem/rd_state" BEL "mem/nCE" BEL "mem/nOE" BEL
+        "mem/DQ_in_7" BEL "mem/DQ_in_6" BEL "mem/DQ_in_5" BEL "mem/DQ_in_4"
+        BEL "mem/DQ_in_3" BEL "mem/DQ_in_2" BEL "mem/DQ_in_1" BEL
+        "mem/DQ_in_0" BEL "io_unit/FSM/deserial_sr" BEL "io_unit/FSM/serr" BEL
+        "io_unit/FSM/s_state_2" BEL "io_unit/FSM/s_state_3" BEL
+        "io_unit/FSM/s_state_4" BEL "io_unit/FSM/n_state_2" BEL
+        "io_unit/FSM/n_state_3" BEL "io_unit/FSM/n_state_1" BEL
+        "cu/cu_state_FSM_FFd1" BEL "cu/cu_state_FSM_FFd2" BEL
+        "cu/cu_state_FSM_FFd3" BEL "cu/ops_rdy_sig" BEL "cu/en_gen" BEL
+        "cu/j_7" BEL "cu/j_6" BEL "cu/j_5" BEL "cu/j_4" BEL "cu/j_3" BEL
+        "cu/j_2" BEL "cu/j_1" BEL "cu/j_0" BEL "cu/i_7" BEL "cu/i_6" BEL
+        "cu/i_5" BEL "cu/i_4" BEL "cu/i_3" BEL "cu/i_2" BEL "cu/i_1" BEL
+        "cu/i_0" BEL "cu/rst_gen" BEL "cu/id_cu" BEL "cu/ij" BEL
+        "cu/addr_cu_8" BEL "cu/addr_cu_7" BEL "cu/addr_cu_6" BEL
+        "cu/addr_cu_5" BEL "cu/addr_cu_4" BEL "cu/addr_cu_3" BEL
+        "cu/addr_cu_2" BEL "cu/addr_cu_1" BEL "cu/addr_cu_0" BEL
+        "cu/came_from_both" BEL "cu/en" BEL "generator_unit/temp_elem_f_7" BEL
+        "generator_unit/temp_elem_f_6" BEL "generator_unit/temp_elem_f_5" BEL
+        "generator_unit/temp_elem_f_4" BEL "generator_unit/temp_elem_f_3" BEL
+        "generator_unit/temp_elem_f_2" BEL "generator_unit/temp_elem_f_1" BEL
+        "generator_unit/temp_elem_f_0" BEL "generator_unit/temp_elem_7" BEL
+        "generator_unit/temp_elem_6" BEL "generator_unit/temp_elem_5" BEL
+        "generator_unit/temp_elem_4" BEL "generator_unit/temp_elem_3" BEL
+        "generator_unit/temp_elem_2" BEL "generator_unit/temp_elem_1" BEL
+        "generator_unit/temp_elem_0" BEL "generator_unit/counter_7" BEL
+        "generator_unit/counter_6" BEL "generator_unit/counter_5" BEL
+        "generator_unit/counter_4" BEL "generator_unit/counter_3" BEL
+        "generator_unit/counter_2" BEL "generator_unit/counter_1" BEL
+        "generator_unit/counter_0" BEL "generator_unit/nth_elem_7" BEL
+        "generator_unit/nth_elem_6" BEL "generator_unit/nth_elem_5" BEL
+        "generator_unit/nth_elem_4" BEL "generator_unit/nth_elem_3" BEL
+        "generator_unit/nth_elem_2" BEL "generator_unit/nth_elem_1" BEL
+        "generator_unit/poly_bcd_reg_7" BEL "generator_unit/poly_bcd_reg_6"
+        BEL "generator_unit/poly_bcd_reg_5" BEL
+        "generator_unit/poly_bcd_reg_4" BEL "generator_unit/poly_bcd_reg_3"
+        BEL "generator_unit/poly_bcd_reg_2" BEL
+        "operators_unit/outconvert_unit/result_7" BEL
+        "operators_unit/outconvert_unit/result_6" BEL
+        "operators_unit/outconvert_unit/result_5" BEL
+        "operators_unit/outconvert_unit/result_4" BEL
+        "operators_unit/outconvert_unit/result_3" BEL
+        "operators_unit/outconvert_unit/result_2" BEL
+        "operators_unit/outconvert_unit/result_1" BEL
+        "operators_unit/outconvert_unit/result_0" BEL
+        "operators_unit/outconvert_unit/id_con" BEL
+        "operators_unit/outconvert_unit/addr_con_7" BEL
+        "operators_unit/outconvert_unit/addr_con_6" BEL
+        "operators_unit/outconvert_unit/addr_con_5" BEL
+        "operators_unit/outconvert_unit/addr_con_4" BEL
+        "operators_unit/outconvert_unit/addr_con_3" BEL
+        "operators_unit/outconvert_unit/addr_con_2" BEL
+        "operators_unit/outconvert_unit/addr_con_1" BEL
+        "operators_unit/outconvert_unit/addr_con_0" BEL "mem/wr_rd" BEL
+        "cu/rd_state" BEL "generator_unit/elem_7" BEL "generator_unit/elem_6"
+        BEL "generator_unit/elem_5" BEL "generator_unit/elem_4" BEL
+        "generator_unit/elem_3" BEL "generator_unit/elem_2" BEL
+        "generator_unit/elem_1" BEL "generator_unit/elem_0" BEL
+        "generator_unit/addr_gen_8" BEL "generator_unit/addr_gen_7" BEL
+        "generator_unit/addr_gen_6" BEL "generator_unit/addr_gen_5" BEL
+        "generator_unit/addr_gen_4" BEL "generator_unit/addr_gen_3" BEL
+        "generator_unit/addr_gen_2" BEL "generator_unit/addr_gen_1" BEL
+        "generator_unit/addr_gen_0" BEL "generator_unit/gen_rdy" BEL
+        "generator_unit/flippy_flop" BEL "generator_unit/wr_rdy" BEL
+        "generator_unit/id_gen" BEL "operators_unit/outconvert_unit/rdy_out"
+        BEL "operators_unit/outconvert_unit/rd_state" BEL "CLK_BUFGP/BUFG";
+TS_CLK = PERIOD TIMEGRP "CLK" 50 MHz HIGH 50%;
+SCHEMATIC END;
+

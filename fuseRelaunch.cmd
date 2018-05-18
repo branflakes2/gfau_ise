@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/media/sf_Xilinx/gfau_ise/top_tb_isim_beh.exe" -prj "/media/sf_Xilinx/gfau_ise/top_tb_beh.prj" "work.top_tb" 
